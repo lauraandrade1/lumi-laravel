@@ -47,6 +47,7 @@
                     <div class="user-dropdown" id="userDropdown">
                         <a href="{{ route('usuario.perfil') }}"><i class="fas fa-user"></i> Meu Perfil</a>
                         <a href="{{ route('diario.index') }}"><i class="fas fa-book-heart"></i> Meu Diário</a>
+                    <a href="{{ route('chat.index') }}" class="nav-link {{ request()->routeIs('chat.*') ? 'active' : '' }}"><i class="fas fa-comments"></i> Conversas</a>
                         @if(Auth::user()->isAdmin())
                             <a href="{{ route('admin.dashboard') }}"><i class="fas fa-shield-halved"></i> Painel Admin</a>
                         @endif

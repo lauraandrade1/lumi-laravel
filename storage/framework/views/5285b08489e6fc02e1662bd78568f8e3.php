@@ -3,7 +3,7 @@
 <?php $__env->startSection('content'); ?>
 <div class="auth-page" style="padding: 3rem 1rem">
     <div class="auth-card" style="max-width:560px">
-        <div class="auth-logo">🧠</div>
+        <div class="auth-logo"></div>
         <h1>Crie sua conta</h1>
         <p class="auth-subtitle">Junte-se à Lumi — é gratuito!</p>
 

@@ -47,6 +47,7 @@
                     <div class="user-dropdown" id="userDropdown">
                         <a href="<?php echo e(route('usuario.perfil')); ?>"><i class="fas fa-user"></i> Meu Perfil</a>
                         <a href="<?php echo e(route('diario.index')); ?>"><i class="fas fa-book-heart"></i> Meu Diário</a>
+                    <a href="<?php echo e(route('chat.index')); ?>" class="nav-link <?php echo e(request()->routeIs('chat.*') ? 'active' : ''); ?>"><i class="fas fa-comments"></i> Conversas</a>
                         <?php if(Auth::user()->isAdmin()): ?>
                             <a href="<?php echo e(route('admin.dashboard')); ?>"><i class="fas fa-shield-halved"></i> Painel Admin</a>
                         <?php endif; ?>
